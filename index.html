@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agent Skill Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">⚡️ 速成版 · Agent Skill 聚合站</p>
+      <h1>Agent Skill Hub</h1>
+      <p class="subtitle">收集全网优秀的 Agent / MCP Skill，按类别浏览、搜索并提交你的作品。</p>
+      <div class="actions">
+        <button id="openSubmit">提交新 Skill</button>
+        <button id="openGuide" class="ghost">查看维护指南</button>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat">
+        <span id="skillCount">0</span>
+        <small>已收录</small>
+      </div>
+      <div class="stat">
+        <span id="categoryCount">0</span>
+        <small>分类</small>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="filters">
+      <input type="search" id="searchInput" placeholder="搜索 Skill / 标签 / 说明" />
+      <select id="categorySelect">
+        <option value="all">全部类别</option>
+      </select>
+      <select id="sourceSelect">
+        <option value="all">全部来源</option>
+      </select>
+    </section>
+
+    <section id="skillGrid" class="grid"></section>
+  </main>
+
+  <dialog id="submitDialog">
+    <h2>提交 Skill</h2>
+    <p>速成阶段直接跳转至 Google Form / Notion 表单。可替换为你自己的收集入口。</p>
+    <a href="https://docs.google.com/forms" target="_blank" rel="noopener" class="primary-link">打开提交表单</a>
+    <button id="closeSubmit">关闭</button>
+  </dialog>
+
+  <dialog id="guideDialog">
+    <h2>站点维护指南</h2>
+    <ol>
+      <li>编辑 <code>data/skills.json</code> 增删 Skill。</li>
+      <li>支持字段：<code>name</code>、<code>description</code>、<code>category</code>、<code>tags</code>、<code>source</code>、<code>link</code>。</li>
+      <li>静态部署：Vercel / Netlify / GitHub Pages 直接指向本目录即可。</li>
+    </ol>
+    <button id="closeGuide">关闭</button>
+  </dialog>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>

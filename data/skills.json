@@ -1,0 +1,34 @@
+[
+  {
+    "name": "RedBookSkills",
+    "description": "自动化发布到小红书的 CDP 工具，支持多账号、素材抓取与内容洞察。",
+    "category": "内容分发",
+    "tags": ["Xiaohongshu", "CDP", "Automation"],
+    "source": "GitHub",
+    "link": "https://github.com/white0dew/XiaohongshuSkills"
+  },
+  {
+    "name": "Agent Reach",
+    "description": "为 AI Agent 装上跨平台触角，集中管理 Twitter/B站/小红书等十余平台能力。",
+    "category": "多平台接入",
+    "tags": ["Installer", "MCP", "Social"],
+    "source": "Clawhub",
+    "link": "https://clawhub.com/skills/agent-reach"
+  },
+  {
+    "name": "Onchain Copilot",
+    "description": "基于 OnchainOS 的链上副驾驶，支持行情解析、策略生成与风控检查。",
+    "category": "Crypto / Onchain",
+    "tags": ["OnchainOS", "Strategy", "Risk"],
+    "source": "In-house",
+    "link": "https://example.com/onchain-copilot"
+  },
+  {
+    "name": "Trend Researcher",
+    "description": "市场趋势分析 Agent，结合网络信号与工具链输出可用洞察。",
+    "category": "市场洞察",
+    "tags": ["Research", "MCP", "Analytics"],
+    "source": "Agency Agents",
+    "link": "https://github.com/msitarzewski/agency-agents"
+  }
+]
