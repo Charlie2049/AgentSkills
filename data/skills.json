@@ -34,5 +34,17 @@
     ],
     "source": "Agency Agents",
     "link": "https://github.com/msitarzewski/agency-agents"
+  },
+  {
+    "name": "全网搜索",
+    "description": "给任意网页加上 markdown.new/ 前缀即可读取 Markdown 版；若 Cloudflare 不支持，尝试 defuddle.md/ 或 r.jina.ai/ 作为前缀；再不行就用 github.com/D4Vinci/Scrapling 爬虫下载内容。",
+    "category": "信息获取",
+    "tags": [
+      "Markdown",
+      "Web",
+      "Crawler"
+    ],
+    "source": "In-house",
+    "link": "https://github.com/D4Vinci/Scrapling"
   }
 ]
